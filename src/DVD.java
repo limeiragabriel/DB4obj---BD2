@@ -7,6 +7,10 @@ public class DVD extends Midia{
         this.diretor = diretor;
         this.produtor = produtor;
     }
+    
+    public DVD() {
+        
+    }
 
     public String getDiretor() {
         return diretor;
@@ -23,4 +27,10 @@ public class DVD extends Midia{
     public void setProdutor(String produtor) {
         this.produtor = produtor;
     }
+
+    @Override
+    public String toString() {
+        return "Cod: "+ super.getCod() + " DVD{" + "diretor=" + diretor + ", produtor=" + produtor + '}';
+    }
+
 }

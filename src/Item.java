@@ -22,6 +22,11 @@ public class Item {
     public void setQtd(int qtd) {
         this.qtd = qtd;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" + "m=" + m + ", qtd=" + qtd + '}';
+    }
     
     
 }

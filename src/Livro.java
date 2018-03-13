@@ -7,6 +7,9 @@ public class Livro extends Midia{
         this.ISBN = ISBN;
         this.autor = autor;
     }
+    public Livro() {
+        
+    }
 
     public String getISBN() {
         return ISBN;
@@ -22,6 +25,11 @@ public class Livro extends Midia{
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+
+    @Override
+    public String toString() {
+        return "Cod: "+ super.getCod() + " Livro{" + "ISBN=" + ISBN + ", autor=" + autor + '}';
     }
 
     

@@ -8,6 +8,9 @@ public class Pedido {
         this.num = num;
         this.itens = new Vector<Item>();
     }
+    public Pedido(){
+        this.itens = new Vector<Item>();
+    }
     
     public void AdicionaItem(Item m){
         itens.add(m);
@@ -38,6 +41,11 @@ public class Pedido {
 
     public void setItens(Vector<Item> itens) {
         this.itens = itens;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "num=" + num + ", itens=" + itens + '}';
     }
     
     

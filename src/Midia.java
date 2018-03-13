@@ -9,6 +9,9 @@ public class Midia {
         this.titulo = titulo;
         this.ano = ano;
     }
+    
+    public Midia() {
+    }
 
     public String getCod() {
         return cod;
